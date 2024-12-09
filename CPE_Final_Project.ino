@@ -52,6 +52,7 @@ void updateBuffer(float x, float y, float z)
   counter = (counter + 1) % N; // Increment the counter and wrap it around when it reaches N
 }
 
+// Function to calculate average of values in array
 float calculateAverage(float arr[])
 {
   float sum = 0;
@@ -60,7 +61,7 @@ float calculateAverage(float arr[])
     sum += arr[i];
   }
   // Calculate and return the average
-  return sum / 5;
+  return sum / N;
 }
 
 // Function to detect a fall based on accelerometer readings
